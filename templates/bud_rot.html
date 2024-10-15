@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bud Rot Disease Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bud.css') }}">
+    <!-- Include Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body{
+        background-color: rgb(186, 233, 223);
+      }
+    </style>
+</head>
+<body>   
+<div class="container col-xxl-8 px-1 py-1">
+    <div class="row align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+            <img src="{{ url_for('static', filename='images/bud.png') }}" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="300px" height="1px" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Bud Rot Disease Details</h1>
+            <p class="lead">
+                <h3>Disease Symptoms:</h3>
+                <ul>
+                    <li>The initial symptom is the characteristic change of spindle leaf color from 
+                    green to yellow and then brownish.</li>
+                    <li>The leaves rot and the growing bud rots causing the death of the palm.</li>
+                    <li>The affected young leaf whorl can be easily pulled off.</li>
+                    <li>The outer leaves also become yellow and droop down one by one leaving a 
+                        bare stem.</li>
+                </ul>
+        
+                <h3>Management</h3>
+                <ul>
+                    <li>Bud rot/ crown rot can be managed if the affected palms are treated in the 
+                        initial stages of infection. </li>
+                    <li>Field sanitation practices like removal and destruction of fruit rot affected, 
+                        dried bunches, shed nuts and the crowns of the palms affected by bud/ crown 
+                        rots may help to reduce the year-round survival of the pathogen inoculum. </li>
+                    <li>Drenching the crown with 1 percent Bordeaux mixture and smearing it with 10 
+                        percent Bordeaux paste after removal of affected tissues is effective in saving 
+                        bud rot affected palms.</li>
+                    <li>Crown rot can be managed by drenching the rhizosphere region with 
+                            potassium phosphonate/ salt of phosphorous acid. A minimum of 5 liters of 
+                            fungicidal solution/ palm (15 ml fungicide in 5 I water) is required for 
+                            drenching (SaraswathYt 2004).</li>
+                    <li>Regular monitoring of treated palms is needed for checking further 
+                        advancement of symptoms.21</li>
+
+                </ul>
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <a href="{{ url_for('home') }}">Go back</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Include Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

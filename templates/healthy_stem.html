@@ -1,0 +1,311 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Areca Nut Management</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/healthy.css') }}">
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body {
+        background-color: rgb(219, 243, 190);
+      }
+
+      h1 {
+        text-decoration: underline; 
+      }
+
+      h3 {
+        text-decoration: underline; /* Corrected typo */
+      }
+
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        padding: 10px 15px;
+        background-color: rgb(191, 225, 236);
+        border: 1px solid blue;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      a:hover {
+        color: white;
+        background-color: rgb(215, 236, 125);
+        text-decoration: underline;
+      }
+
+      .left-image {
+        max-width: 100%;
+        height: auto;
+        flex-shrink: 0;
+      }
+
+      .content {
+        flex: 1;
+      }
+
+      .top-content, .bottom-content {
+        padding: 15px;
+      }
+
+      .img-container {
+        display: flex;
+        align-items: center;
+      }
+
+      .text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      #box {
+        float: left;
+        margin: 15px;
+        border: 20px;
+        width: 150px;
+        height: 150px;
+        border-radius: 5px;
+        background-color: aqua;
+        padding: 10px;
+      }
+
+      #special {
+        background-color: lightskyblue;
+        padding: 15px;
+        color: rgb(13, 1, 1);
+      }
+
+      .top-content {
+        clear: left;
+      }
+    </style>
+</head>
+<body>   
+<div class="container py-5">
+    <div class="row align-items-center g-5 py-5">
+        <div class="col-12 col-lg-6 img-container">
+            <img src="{{ url_for('static', filename='images/bg4.jpg') }}" class="left-image" alt="Bootstrap Themes" loading="lazy">
+        </div>
+        <div class="col-12 col-lg-6 text-container">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Management Of Areca Nut Plantation</h1>
+            <div class="content">
+                <div class="top-content">
+                    <h4>Introduction</h4>
+                    <p>The arecanut palm is the source of common chewing nut, popularly known as betel nut or Supari. In India it is extensively used by large sections of people and is very much linked with religious practices. India is the largest producer of arecanut and at the same time largest consumer also. Major states cultivating this crop are Karnataka (40%), Kerala (25%), Assam (20%), Tamil Nadu, Meghalaya and West Bengal.</p>
+                    <h4>Climate</h4>
+                    <p>The cultivation of arecanut is mostly confined to 28º north and south of the equator. It grows well within the temperature range of 14ºC and 36ºC and is adversely affected by temperatures below 10ºC and above 40ºC. Extremes of temperature and wide diurnal variations are not conducive for the healthy growth of the palms. Arecanut can be grown in areas receiving annual rainfall of 750 mm in Maidan parts of Karnataka to 4,500 mm in Malnad areas of Karnataka. In areas where there is prolonged dry spell, the palms are irrigated. Due to its susceptibility to low temperature, a good crop of arecanut cannot be obtained at an altitude of more than 1000 m MSL.</p>
+                    </div>
+                    <div class="bottom-content">
+                    <h4>Soil</h4>
+                    <p>The largest area under the crop is found in gravelly laterite soils of red clay type. It can also be grown on fertile clay loam soils. Sticky clay, sandy, alluvial, brackish and calcareous soils are not suitable for arecanut cultivation.</p>
+                    <h4>Selection of mother palm</h4>
+                    <p>The criteria for the selection of mother palm are; early bearing, regular bearing habit, large number of leaves on the crown, shorter internodes and high fruit set.</p>
+                    <h5>Selection of seed nut</h5>
+                    <p>Fully ripened nuts having weight of above 35 g should be selected. The nuts selected should float vertically with calyx-end pointing upwards when allowed to float on water. These nuts produce the seedlings of greater vigour.</p>
+                    <h5>Primary and secondary nurseries</h5>
+                    <p>For obtaining good germination, the seed nuts should be sown as whole fruits. The nuts should be sown immediately after the harvest in soil or sand and watered daily to get early and good germination. The nuts should be sown at 15 cm distance in vertical position with calyx end just covered. The beds may be mulched lightly using areca leaf or paddy straw. After six months in primary nursery, the seedlings are to be transplanted to secondary nursery beds of 150 cm width, 15 cm height and convenient length. A spacing of 30 cm between the seedlings is considered to be optimum for a growth period of one year in the nursery. Polythene bags (25x15cm, 150 gauge) filled with potting mixture (top soil : FYM : sand = 7:3:2) can also be used to raise secondary nursery. Sprouts of 3 months old should be used. The secondary nursery should be given a basal dose of decomposed farm yard manure@ 5 tonnes per ha. Areca sprouts and seedlings are very delicate and do not withstand exposure to direct sunlight. Hence, proper shade should be provided to the nursery. The nursery should be watered regularly in the summer and proper drainage should be provided in rainy season. The nursery should be kept clean by periodical weeding.</p>
+                    <h5>Selection of seedlings</h5>
+                    <p>Twelve to eighteen-month-old seedlings are to be selected and transplanted in the main field. Seedlings with maximum number of leaves (five or above), minimum height and maximum girth are to be selected for planting. The selected seedlings should be removed with a ball of earth adhering to the roots for planting.</p>
+                
+                
+                    <h4>Spacing</h4>
+                    <p>This depends on the rooting pattern of the crop along with the fertility and depth of the soil. The studies conducted at different places with different spacing have revealed that a spacing of 2.7 m X 2.7 m is optimum for arecanut.</p>
+                    <h4>Depth of planting</h4>
+                    <p>In well-drained soils and in the fields where proper drainage can be provided, deep planting is preferred. Deeper planting provides a firm anchorage and larger volume of space for root development. In areas where water table is high, shallow planting is preferred. Thus in well-drained soils, planting at a depth of 90 cm is recommended and in heavy soils planting at a depth of 60 cm is recommended.</p>
+                    <h4>Season of planting</h4>
+                    <p>In areas where South-West monsoon is severe, planting in the month of September-October is recommended. In other areas planting can also be done in the months of May-June.</p>
+                    <h4>Drainage</h4>
+                    <p>For better growth and development of the plants proper drainage is essential. The number of drainage channels depend upon the soil type. In light soils the number of channels may be less and in heavy soils the channels should be dug in each row for proper draining of the excess water. The channels should be at least 15 – 30 cm deeper than the depth at which the seedlings are planted.</p>
+                    <h4>Shading</h4>
+                    <p>The palms are highly susceptible for sun scorching. The seedlings should be given protection against the direct exposure to sun. This may be done either covering the plants with areca or coconut leaves or by raising crops like banana in between two rows of arecanut. Sun scorching is mostly seen during October – January. During this period even the stems of young palms have to be protected. For this a quick growing shade plant can be planted on Southern and Western sides of the garden.</p>
+                    <h4>Nutrient Requirement</h4>
+                    <p>Annual application of 100 g N (220 g urea), 40 g P2O5 (200 g rock phosphate) and 140 g K2O (235 g muriate of potash) in addition to 12 kg each of green leaf and compost per palm per year is recommended. The fertilizers are to be applied in two split doses. One third of the fertilizer is applied in May - June and two third along with the organics during September-October. Fertilizers are applied in basins around the palm dug to a depth of 15-20 cm and 0.5-1.0 m radius leaving 20 cm from the base of the palm. After application, the soil is rolled up and covered with organic matter and soil.</p>
+                    <h5>Organic matter recycling</h5>
+                    <p>On an average, 5.5 to 6.0 tonnes of wastes are available from one ha of areca garden per year. This can be effectively used as organic source of nutrients for areca palms. But direct application of these wastes in the garden will take long time for decomposition and will not meet the nutrient demand of the crop immediately. Hence, these materials can be composted using earthworms effectively and used as organic manure in areca gardens.</p>
+                    <p>To prepare vermicompost, areca wastes are chopped into small pieces of 10 cm and heaped. The heap should be mixed with cow dung slurry @ 10 kg / 100 kg of waste and kept for two weeks with sprinkling water daily. Then the chopped material is arranged in beds of one-meter width and convenient length. Cement tanks or trenches can be used for this purpose. A layer of 10-15 cm waste material is alternated with 2 cm layer of cow dung over which earthworms are released at the rate of 1000 numbers per square meter. The wastes are converted into fine granular, odourless vermicompost within 60 days. During this period, the earthworm population is doubled. About 8 kg /palm/year of vermicompost meets the crop nutrient demand in terms of nitrogen. The two species of earthworms Eudrilus eugeniae and Eisenia foetida can be used.</p>
+                    <h4>Cultural operations</h4>
+                    <p>The cultural operations vary from area to area. In Maland tracts the main purpose of cultivation is to loosen the soil and to rebuild the soil fertility after the heavy rains during monsoon. In Maidan tracts the purpose of cultivation is to conserve the soil moisture and prevent the hardening of the soil, as the soils are heavy in these areas. In general the cultivation was found to increase the yield by 10-20%. In light soils digging can be done once in two years. But in heavy soils digging has to be done every year. Clean cultivation was found to give better yield. When planting is done on hill slopes, contour planting gave highest yields. Mulching is another operation being followed in the arecanut gardens. This checks evaporation during summer, erosion during rainy seasons and keeps the weeds under check. Chopped areca leaves, grass, arecanut husk and dry leaves collected from the forests can be used as mulch in areca gardens.</p>
+                    <h4>Irrigation</h4>
+                    <p>Arecanut cannot withstand drought for a long time. Being a perennial crop, once affected by water stress, it may require two-three years to regain the normal vigour and yield. The death of palms due to moisture stress is also not uncommon. Irrigation intervals of 5 and 10 days were found superior throughout the season. The quantity of water to be applied is about 200 lit per palm/irrigation.</p>
+                    <p>During the summer, majority of the farmers face scarcity of water and it will be difficult to supply the required water to the palms. To overcome this problem, new irrigation methods were tried which can save water without affecting the yield of arecanut. They are sprinklers and drip irrigation methods. Sprinkler and drip irrigations can save 20 and 44 per cent respectively of water.</p>
+                    <h4>Fertigation</h4>
+                    <p>Application of nutrients through irrigation water is called as fertigation. This procedure can be profitably followed in arecanut. The studies at CPCRI have shown that in the initial stages of areca garden only 75% of the recommended dose of fertilizer is sufficient when the fertilizer was given through drip irrigation. The fertilizer should be split into ten parts and should be applied once in 20 days from November to May.</p>
+                    <h4>Arecanut based cropping systems</h4>
+                    <p>Arecanut is cultivated with spacing of 2.7 X 2.7 m provides ample scope for cultivation various annual by biennial and perennial crops in the inter spaces. Banana, pepper, cocoa, elephant foot yam, citrus, betelvine, pineapple etc. were found suitable for inter/mixed cropping in arecanut. However, it is found that as the age of the garden advances, only few crops can be grown profitably as mixed crop viz., pepper, cocoa, banana, lime and betelvine.</p>
+                </div>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <a href="{{ url_for('home') }}">Go back</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Areca Nut Management</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/healthy.css') }}">
+    <!-- Include Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body {
+        background-color: rgb(219, 243, 190);
+      }
+
+      h1 {
+        text-decoration: underline; 
+      }
+
+      h3 {
+        text-decoration: underline;
+      }
+
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        padding: 10px 15px;
+        background-color: rgb(191, 225, 236);
+        border: 1px solid blue;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      a:hover {
+        color: white;
+        background-color: rgb(215, 236, 125);
+        text-decoration: underline;
+      }
+
+      .left-image {
+        max-width: 100%;
+        height: auto;
+        flex-shrink: 0;
+      }
+
+      .content {
+        flex: 1;
+      }
+
+      .top-content, .bottom-content {
+        padding: 15px;
+      }
+
+      .img-container {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      #box {
+        float: left;
+        margin: 15px;
+        border: 20px;
+        width: 150px;
+        height: 150px;
+        border-radius: 5px;
+        background-color: aqua;
+        padding: 10px;
+      }
+
+      #special {
+        background-color: lightskyblue;
+        padding: 15px;
+        color: rgb(13, 1, 1);
+      }
+
+      .top-content {
+        clear: left;
+      }
+
+      .full-width {
+        width: 100%;
+      }
+    </style>
+</head>
+<body>   
+<div class="container py-5">
+    <div class="row align-items-center g-5 py-5">
+        <div class="col-12 col-lg-6 order-lg-2 img-container">
+            <img src="{{ url_for('static', filename='images/bg4.jpg') }}" class="left-image" alt="Areca Nut Image" loading="lazy">
+        </div>
+        <div class="col-12 col-lg-6 order-lg-1 text-container">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Management Of Areca Nut Plantation</h1>
+            <div class="content">
+                <div class="top-content">
+                    <h4>Introduction</h4>
+                    <p>The arecanut palm is the source of common chewing nut, popularly known as betel nut or Supari. In India it is extensively used by large sections of people and is very much linked with religious practices. India is the largest producer of arecanut and at the same time largest consumer also. Major states cultivating this crop are Karnataka (40%), Kerala (25%), Assam (20%), Tamil Nadu, Meghalaya and West Bengal.</p>
+                    <h4>Climate</h4>
+                    <p>The cultivation of arecanut is mostly confined to 28º north and south of the equator. It grows well within the temperature range of 14ºC and 36ºC and is adversely affected by temperatures below 10ºC and above 40ºC. Extremes of temperature and wide diurnal variations are not conducive for the healthy growth of the palms. Arecanut can be grown in areas receiving annual rainfall of 750 mm in Maidan parts of Karnataka to 4,500 mm in Malnad areas of Karnataka. In areas where there is prolonged dry spell, the palms are irrigated. Due to its susceptibility to low temperature, a good crop of arecanut cannot be obtained at an altitude of more than 1000 m MSL.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 full-width">
+            <div class="bottom-content">
+                <h4>Soil</h4>
+                <p>The largest area under the crop is found in gravelly laterite soils of red clay type. It can also be grown on fertile clay loam soils. Sticky clay, sandy, alluvial, brackish and calcareous soils are not suitable for arecanut cultivation.</p>
+                <h4>Selection of mother palm</h4>
+                <p>The criteria for the selection of mother palm are; early bearing, regular bearing habit, large number of leaves on the crown, shorter internodes and high fruit set.</p>
+                <h5>Selection of seed nut</h5>
+                <p>Fully ripened nuts having weight of above 35 g should be selected. The nuts selected should float vertically with calyx-end pointing upwards when allowed to float on water. These nuts produce the seedlings of greater vigour.</p>
+                <h5>Primary and secondary nurseries</h5>
+                <p>For obtaining good germination, the seed nuts should be sown as whole fruits. The nuts should be sown immediately after the harvest in soil or sand and watered daily to get early and good germination. The nuts should be sown at 15 cm distance in vertical position with calyx end just covered. The beds may be mulched lightly using areca leaf or paddy straw. After six months in primary nursery, the seedlings are to be transplanted to secondary nursery beds of 150 cm width, 15 cm height and convenient length. A spacing of 30 cm between the seedlings is considered to be optimum for a growth period of one year in the nursery. Polythene bags (25x15cm, 150 gauge) filled with potting mixture (top soil : FYM : sand = 7:3:2) can also be used to raise secondary nursery. Sprouts of 3 months old should be used. The secondary nursery should be given a basal dose of decomposed farm yard manure@ 5 tonnes per ha. Areca sprouts and seedlings are very delicate and do not withstand exposure to direct sunlight. Hence, proper shade should be provided to the nursery. The nursery should be watered regularly in the summer and proper drainage should be provided in rainy season. The nursery should be kept clean by periodical weeding.</p>
+                <h5>Selection of seedlings</h5>
+                <p>Twelve to eighteen-month-old seedlings are to be selected and transplanted in the main field. Seedlings with maximum number of leaves (five or above), minimum height and maximum girth are to be selected for planting. The selected seedlings should be removed with a ball of earth adhering to the roots for planting.</p>
+            
+                <h4>Spacing</h4>
+                <p>This depends on the rooting pattern of the crop along with the fertility and depth of the soil. The studies conducted at different places with different spacing have revealed that a spacing of 2.7 m X 2.7 m is optimum for arecanut.</p>
+                <h4>Depth of planting</h4>
+                <p>In well-drained soils and in the fields where proper drainage can be provided, deep planting is preferred. Deeper planting provides a firm anchorage and larger volume of space for root development. In areas where water table is high, shallow planting is preferred. Thus in well-drained soils, planting at a depth of 90 cm is recommended and in heavy soils planting at a depth of 60 cm is recommended.</p>
+                <h4>Season of planting</h4>
+                <p>In areas where South-West monsoon is severe, planting in the month of September-October is recommended. In other areas planting can also be done in the months of May-June.</p>
+                <h4>Drainage</h4>
+                <p>For better growth and development of the plants proper drainage is essential. The number of drainage channels depend upon the soil type. In light soils the number of channels may be less and in heavy soils the channels should be dug in each row for proper draining of the excess water. The channels should be at least 15 – 30 cm deeper than the depth at which the seedlings are planted.</p>
+                <h4>Shading</h4>
+                <p>The palms are highly susceptible for sun scorching. The seedlings should be given protection against the direct exposure to sun. This may be done either covering the plants with areca or coconut leaves or by raising crops like banana in between two rows of arecanut. Sun scorching is mostly seen during October – January. During this period even the stems of young palms have to be protected. For this a quick growing shade plant can be planted on Southern and Western sides of the garden.</p>
+                <h4>Nutrient Requirement</h4>
+                <p>Annual application of 100 g N (220 g urea), 40 g P2O5 (200 g rock phosphate) and 140 g K2O (235 g muriate of potash) in addition to 12 kg each of green leaf and compost per palm per year is recommended. The fertilizers are to be applied in two split doses. One third of the fertilizer is applied in May - June and two third along with the organics during September-October. Fertilizers are applied in basins around the palm dug to a depth of 15-20 cm and 0.5-1.0 m radius leaving 20 cm from the base of the palm. After application, the soil is rolled up and covered with organic matter and soil.</p>
+                <h5>Organic matter recycling</h5>
+                <p>On an average, 5.5 to 6.0 tonnes of wastes are available from one ha of areca garden per year. This can be effectively used as organic source of nutrients for areca palms. But direct application of these wastes in the garden will take long time for decomposition and will not meet the nutrient demand of the crop immediately. Hence, these materials can be composted using earthworms effectively and used as organic manure in areca gardens.</p>
+                <p>To prepare vermicompost, areca wastes are chopped into small pieces of 10 cm and heaped. The heap should be mixed with cow dung slurry @ 10 kg / 100 kg of waste and kept for two weeks with sprinkling water daily. Then the chopped material is arranged in beds of one-meter width and convenient length. Cement tanks or trenches can be used for this purpose. A layer of 10-15 cm waste material is alternated with 2 cm layer of cow dung over which earthworms are released at the rate of 1000 numbers per square meter. The wastes are converted into fine granular, odourless vermicompost within 60 days. During this period, the earthworm population is doubled. About 8 kg /palm/year of vermicompost meets the crop nutrient demand in terms of nitrogen. The two species of earthworms Eudrilus eugeniae and Eisenia foetida can be used.</p>
+                <h4>Cultural operations</h4>
+                <p>The cultural operations vary from area to area. In Maland tracts the main purpose of cultivation is to loosen the soil and to rebuild the soil fertility after the heavy rains during monsoon. In Maidan tracts the purpose of cultivation is to conserve the soil moisture and prevent the hardening of the soil, as the soils are heavy in these areas. In general the cultivation was found to increase the yield by 10-20%. In light soils digging can be done once in two years. But in heavy soils digging has to be done every year. Clean cultivation was found to give better yield. When planting is done on hill slopes, contour planting gave highest yields. Mulching is another operation being followed in the arecanut gardens. This checks evaporation during summer, erosion during rainy seasons and keeps the weeds under check. Chopped areca leaves, grass, arecanut husk and dry leaves collected from the forests can be used as mulch in areca gardens.</p>
+                <h4>Irrigation</h4>
+                <p>Arecanut cannot withstand drought for a long time. Being a perennial crop, once affected by water stress, it may require two-three years to regain the normal vigour and yield. The death of palms due to moisture stress is also not uncommon. Irrigation intervals of 5 and 10 days were found superior throughout the season. The quantity of water to be applied is about 200 lit per palm/irrigation.</p>
+                <p>During the summer, majority of the farmers face scarcity of water and it will be difficult to supply the required water to the palms. To overcome this problem, new irrigation methods were tried which can save water without affecting the yield of arecanut. They are sprinklers and drip irrigation methods. Sprinkler and drip irrigations can save 20 and 44 per cent respectively of water.</p>
+                <h4>Fertigation</h4>
+                <p>Application of nutrients through irrigation water is called as fertigation. This procedure can be profitably followed in arecanut. The studies at CPCRI have shown that in the initial stages of areca garden only 75% of the recommended dose of fertilizer is sufficient when the fertilizer was given through drip irrigation. The fertilizer should be split into ten parts and should be applied once in 20 days from November to May.</p>
+                <h4>Arecanut based cropping systems</h4>
+                <p>Arecanut is cultivated with spacing of 2.7 X 2.7 m provides ample scope for cultivation various annual by biennial and perennial crops in the inter spaces. Banana, pepper, cocoa, elephant foot yam, citrus, betelvine, pineapple etc. were found suitable for inter/mixed cropping in arecanut. However, it is found that as the age of the garden advances, only few crops can be grown profitably as mixed crop viz., pepper, cocoa, banana, lime and betelvine.</p>
+            </div>
+        </div>
+    </div>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-3">
+        <a href="{{ url_for('home') }}">Go back</a>
+    </div>
+</div>
+<!-- Include Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+

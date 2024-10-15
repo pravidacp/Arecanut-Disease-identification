@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classification Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Classification Result</h1>
+        <img src="{{ image_url }}" height=100 width=150  alt="Uploaded Image">
+        <p class="pred">{{ result }}</p>
+        {% if detailed_link %}
+            <p><a href="{{ detailed_link }}">Click here for more details</a></p>
+        {% endif %}
+        <a href="{{ url_for('home') }}">Go back</a>
+    </div>
+</body>
+</html>

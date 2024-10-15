@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stem Rot Disease Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/inf.css') }}">
+    <!-- Include Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body{
+        background-color: rgb(186, 233, 223);
+      }
+    </style>
+</head>
+<body>   
+<div class="container col-xxl-8 px-1 py-1">
+    <div class="row align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+            <img src="{{ url_for('static', filename='images/stem.jpg') }}" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="300px" height="1px" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Stem Rot Disease Details</h1>
+            <p class="lead">
+                <h3>Disease Symptoms:</h3>
+                <ul>
+                    <li>The leaf lets in outer whorls that become yellow and spread to the whole leaf and 
+                        the leaves droop down covering the stem. </li>
+                    <li>Later, the inner whorl leaves also become yellow. Subsequently, all the leaves 
+                        droop, dry up, and fall off, leaving the stem alone.</li>
+                    <li>Then the stem becomes brittle and easily broken by heavy wind. </li>
+                    <li>The base of the stem shows brown discoloration and oozing of dark fluid. </li>
+                    <li>Bracket-shaped fructifications of the fungus called ‘anabe’ appear at the base of 
+                        the trunk.</li>
+                    <li>Roots become discolored, brittle, and dried. When the infected trunk is cut open brown discoloration can be seen up to one 
+                        metre from ground level </li>
+                </ul>
+        
+                <h3>Management</h3>
+                <ul>
+                    <li>Prophylactic spraying of 1 per cent Bordeaux mixture at least three times at an interval of 45 days i. e. just before the onset of south-west monsoon, during the monsoon period and if the monsoon prolongs, a third spray is essential</li>
+                    <li>Use adhesive or sticker to ensure tenacity of the spray deposit on treated substrate.</li>
+
+                </ul>
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <a href="{{ url_for('home') }}">Go back</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Include Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

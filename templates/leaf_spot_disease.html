@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaf Spot Disease Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/spot.css') }}">
+    <!-- Include Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body{
+        background-color: rgb(186, 233, 223);
+      }
+    </style>
+</head>
+<body>   
+<div class="container col-xxl-8 px-1 py-1">
+    <div class="row align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+            <img src="{{ url_for('static', filename='images/Leaf spot.jpg') }}" id="box" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="400px" height="100px" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3" id="special">Leaf Spot Disease Details</h1>
+            <p class="lead">
+                <h3>Disease Symptoms:</h3>
+                <ul>
+                    <li>Yellowing of the leaves is the typical symptom of YLD. Yellowing starts from the tip of the leaflets of the outer leaves and is sometimes seen in the middle whorl.</li>
+                    <li>Yellowing spreads gradually extending from the margin to the middle of lamina portions near the midrib remain green.</li>
+                    <li>In advanced stages, yellowing spreads to all leaves completely, dries, and falls off. The kernel of the nuts of affected palms becomes soft, shows blackish discoloration, and assumes a spongy texture. YLD is transmitted by the plant hopper, Proutista moesta.</li>
+                    <li>Small, round, brown to dark brown or black colored spots with yellow halo are the characteristic symptoms of this disease. Later, the spots coalesce to form blighted patches. Severe infection results in drying, drooping, and shredding of the infected leaves.</li>
+                </ul>
+        
+                <h3>Management</h3>
+                <ul>
+                    <li>Collection and destruction of diseased plant parts help in the reduction of the inoculum load of this disease.</li>
+                    <li>Spraying of 0.3 percent Mancozeb or 0.2 percent Foltaf results in the effective management of this disease.</li>
+                </ul>
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <a href="{{ url_for('home') }}">Go back</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Include Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

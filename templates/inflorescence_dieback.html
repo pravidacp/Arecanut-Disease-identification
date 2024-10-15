@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inflorescence Die Back Disease Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/inf.css') }}">
+    <!-- Include Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body{
+        background-color: rgb(186, 233, 223);
+      }
+    </style>
+</head>
+<body>   
+<div class="container col-xxl-8 px-1 py-1">
+    <div class="row align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+            <img src="{{ url_for('static', filename='images/inf.jpg') }}" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="300px" height="1px" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Inflorescence Die Back Disease Details</h1>
+            <p class="lead">
+                <h3>Disease Symptoms:</h3>
+                <ul>
+                    <li>The disease appears on the rachillae of the male flowers and then in the 
+                        inflorescence dies back the main rachis as brownish patches which soon 
+                        spread from tip downwards covering the entire rachis and causing wilting.</li>
+                    <li>The female flowers of the infected rachis shed and the whole inflorescence 
+                        shows ‘die back’ symptoms.</li>
+                    <li>The fruiting bodies of the fungus (conidia) appear as concentric rings in the 
+                        discolored areas. </li>
+                    <li>The disease is severe mostly during dry conditions (February-March). 
+                        Button shedding followed by die-back of the inflorescence is a severe 
+                        problem in areca nut plantations during monsoon periods.</li>
+                </ul>
+        
+                <h3>Management</h3>
+                <ul>
+                    <li>Field sanitation practices including the removal and burning of infected dried 
+                        bunches to reduce the inoculum level in the garden should be strictly followed.</li>
+                    <li>Spraying of mancozeb (3 gil) while opening female flowers will reduce the 
+                        disease incidence. A second spraying should be taken up after 20-25 days. 
+                        </li>
+
+                </ul>
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <a href="{{ url_for('home') }}">Go back</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Include Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

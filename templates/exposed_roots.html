@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exposed Roots Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/spot.css') }}">
+    <!-- Include Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body{
+        background-color: rgb(186, 233, 223);
+      }
+    </style>
+</head>
+<body>   
+<div class="container col-xxl-8 px-1 py-1">
+    <div class="row align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+            <img src="{{ url_for('static', filename='images/exposed root.jpg') }}" id="box" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="400px" height="400px" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3" id="special">Exposed Roots</h1>
+            <p class="lead">
+                <p>Exposed roots in areca nut , also known as betel nut palm, can be a sign of several underlying issues but is not itself a disease.</p>
+                <ul>
+                    <li>Soil Erosion: Exposed roots may result from soil erosion, which can be caused by heavy rains, poor soil structure, or improper land management practices. This can lead to weakened support for the trees and potentially lower yields.</li>
+                    <li>Shallow Root System: Areca nut palms naturally have a relatively shallow root system. In some cases, especially in sandy or loose soils, these roots may become exposed over time as the topsoil erodes or settles.</li>
+                    <li>Improper Planting Depth: If the palms were planted too shallowly initially, their roots might become exposed as the trees grow and the soil settles.</li>
+                </ul>
+        
+                <h3>Management</h3>
+                <ul>
+                <li>Mulching: Applying mulch around the base of the trees can help protect the roots, retain soil moisture, and reduce erosion.</li>                    <li>Spraying of 0.3 percent Mancozeb or 0.2 percent Foltaf results in the effective management of this disease.</li>
+                <li>Soil Amendments: Improving soil health with organic matter can enhance soil structure and stability, reducing the likelihood of root exposure.</li>
+                <li>Erosion Control: Implementing erosion control measures, such as contour planting, terracing, or the use of cover crops, can help prevent soil erosion.</li>
+                </ul>
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <a href="{{ url_for('home') }}">Go back</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Include Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
